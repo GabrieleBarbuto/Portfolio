@@ -127,3 +127,8 @@ p{
   opacity: 1;
   transform: translateY(0);
 }
+
+section{
+
+  margin-top: 50%;
+}
