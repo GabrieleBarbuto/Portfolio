@@ -94,9 +94,15 @@ p{
     text-align: center;
     border: 2px solid #5D6063;    
     border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
   
 }
   
+.button-link:hover{
+
+  background-color: #012dbe;
+}
   nav ul {
 
     list-style-type: none;
