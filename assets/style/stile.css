@@ -4,7 +4,19 @@
     height: auto;
     border: 2px solid #5D6063;
     border-radius: 50px;
+    margin-left: 325px;
     
+}
+
+.header-line{
+
+  position: relative;
+  top: 10px;
+  border-top: 2.5px solid #0e3584;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 10px;
 }
 
 body{
@@ -12,11 +24,24 @@ body{
     color: #414141;
     background-color: #a1dae6;
     text-align: center;
+    font-family: 'raleway', sans-serif;
 }
+.contenitore-p{
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.presentazione{
+
+  margin-right: 250px;
+}
+
 
 h1{
     text-align: center;
-    color: #008cff;
+    color: #0e3584; 
     /*background-color: rgb(156, 245, 215);
     display: inline;
     padding: 10px;
@@ -26,17 +51,19 @@ h1{
 
 h2 {
 
-  background-color: #a2ffff;
-  border: 2px solid #5D6063;    
+  background-color: #a2ffff5e;
+  border: 3px solid #5995DA;   
   border-radius: 15px;
   padding: 10px;
   display: inline-block;
   
 }
-h1, h2{
 
-    font-family: Arial, Helvetica, sans-serif;
+h1, h2, h3{
+
+    font-family:'eb garamond',serif ;
 }
+
 
 /*ul {
 
@@ -49,7 +76,8 @@ ol {
 }
 
 p{
-    text-align: center;
+    text-align: justify;
+    
 }
 
 /*div {
@@ -66,25 +94,16 @@ p{
     color: #7E8184;        
     font-style: italic;
   }
-  .button {
-    color: #FFF;
-    background-color: #5995DA;    
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #5D6063;    
-    border-radius: 20px;
   
-    width: 200px;
-    margin: 20px auto;
-  }
 
   .call-to-action {
     font-style: italic;
     background-color: #012dbe;
   }
 
-  .button-link {
+  
+  .button-link0, .button-link1{
+    
     width: calc(100% - 80px);
     margin: 5px 30px;
     color: #FFF;
@@ -92,17 +111,54 @@ p{
     font-weight: bold;
     padding: 20px;
     text-align: center;
-    border: 2px solid #5D6063;    
+    border: 3px solid #0e3584;     
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
-  
+    text-decoration: none;
+    
 }
-  
+.button-link0{
+  margin-left: 500px;
+}
+ 
+@media screen and (max-width: 480px) {
+  flex-direction: column;
+}
 .button-link:hover{
 
-  background-color: #012dbe;
+  background-color: #0e3584;
+  border: 3px solid #5995DA;
+  
+
 }
+
+.button-link2 {
+    
+  width: calc(100% - 80px);
+  margin: 5px 30px;
+  color: #FFF;
+  background-color: #5995DA;    
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  border: 3px solid #0e3584;     
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display:inline-block;
+  max-width: 125px;
+}
+
+.button-link2:hover{
+
+  background-color: #0e3584;
+  border: 3px solid #5995DA;
+  
+
+}
+
   nav ul {
 
     list-style-type: none;
@@ -117,10 +173,19 @@ p{
   nav ul li a {
     text-decoration: none;
     font-weight: 800;
-    color: #132043;
+    color: #0e3584;
     padding: 10px;
     position: relative;
+    border: 2px solid #0e358400;
+    border-radius: 10px;
 }
+
+nav ul li a:hover {
+
+  border: 2px solid #0e3584;
+  border-radius: 10px;
+}
+
 
 .fade-in-section {
   opacity: 0;
@@ -136,5 +201,86 @@ p{
 
 section{
 
-  margin-top: 50%;
+  margin-top: 20%;
 }
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 20px;;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 100px;
+  background-color: rgba(8, 63, 91, 0.311);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 15, 91, 0.203);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
+
+.portfolio-item p{
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.portfolio-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.portfolio-item:hover img{
+  transform: scale(1.1);
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+  transition: transform 0.5s ease;
+  
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
