@@ -4,7 +4,7 @@
     height: auto;
     border: 2px solid #5D6063;
     border-radius: 50px;
-    margin-left: 325px;
+    margin-left: 550px;
     
 }
 
@@ -31,7 +31,7 @@ body{
   margin-top: 100px;
   justify-content: space-between;
   align-items: center;
-  
+  margin-right: 210px;
 }
 .presentazione{
 
@@ -42,15 +42,9 @@ body{
 h1{
     text-align: center;
     color: #0e3584; 
-    /*background-color: rgb(156, 245, 215);
-    display: inline;
-    padding: 10px;
-    border: 1px solid #5D6063;
-    border-radius: 5px;*/
 }
 
 h2 {
-
   background-color: #a2ffff5e;
   border: 3px solid #5995DA;   
   border-radius: 15px;
@@ -64,45 +58,12 @@ h1, h2, h3{
     font-family:'eb garamond',serif ;
 }
 
-
-/*ul {
-
-    list-style-type: square ;
-}*/
-
-ol {
-
-    list-style-type: lower-greek;
-}
-
 p{
     text-align: justify;
     
 }
-
-/*div {
-    color: #FFF;
-    background-color: #5995DA;
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #5D6063;
-    border-radius: 5px;
-  }*/
-
-  .synopsis {
-    color: #7E8184;        
-    font-style: italic;
-  }
-  
-
-  .call-to-action {
-    font-style: italic;
-    background-color: #012dbe;
-  }
-
-  
-  .button-link0, .button-link1{
+ 
+.button-link0, .button-link1{
     
     width: calc(100% - 80px);
     margin: 5px 30px;
@@ -118,6 +79,7 @@ p{
     text-decoration: none;
     
 }
+
 .button-link0{
   margin-left: 500px;
 }
@@ -125,12 +87,12 @@ p{
 @media screen and (max-width: 480px) {
   flex-direction: column;
 }
-.button-link:hover{
+
+.button-link0:hover, .button-link1:hover{
 
   background-color: #0e3584;
   border: 3px solid #5995DA;
   
-
 }
 
 .button-link2 {
@@ -199,12 +161,8 @@ nav ul li a:hover {
   transform: translateY(0);
 }
 
-section{
-
-  margin-top: 20%;
-}
-
-.portfolio-container {
+.about_main{
+  width: 75%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-radius: 20px;;
@@ -215,6 +173,32 @@ section{
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(0, 15, 91, 0.203);
+  margin-left: 12%;
+}
+
+section{
+
+  margin-top: 20%;
+}
+.skill-icon{
+  height: auto;
+  width: 50px;
+  
+}
+
+.portfolio-container {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 20px;;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 100px;
+  background-color: rgba(8, 63, 91, 0.311);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 15, 91, 0.203);
+  margin-left: 12%;
 }
 
 .portfolio-item img {
@@ -235,7 +219,7 @@ section{
   padding: 10px;
   text-align: center;
   margin-bottom: 6px;
-}
+  }
 
 .portfolio-item:hover img{
   transform: scale(1.1);
