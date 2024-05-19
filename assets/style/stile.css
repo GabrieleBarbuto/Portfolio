@@ -28,7 +28,7 @@ body{
 }
 .contenitore-p{
   display: flex;
-  margin-top: 100px;
+  margin-top: 130px;
   justify-content: space-between;
   align-items: center;
   margin-right: 210px;
@@ -58,11 +58,9 @@ h1, h2, h3{
     font-family:'eb garamond',serif ;
 }
 
-p{
-    text-align: justify;
-    
+.buttons-container{
+  margin-right: 150px;
 }
- 
 .button-link0, .button-link1{
     
     width: calc(100% - 80px);
@@ -84,15 +82,11 @@ p{
   margin-left: 500px;
 }
  
-@media screen and (max-width: 480px) {
-  flex-direction: column;
-}
-
 .button-link0:hover, .button-link1:hover{
 
   background-color: #0e3584;
   border: 3px solid #5995DA;
-  
+
 }
 
 .button-link2 {
@@ -111,6 +105,7 @@ p{
   text-decoration: none;
   display:inline-block;
   max-width: 125px;
+
 }
 
 .button-link2:hover{
@@ -118,7 +113,6 @@ p{
   background-color: #0e3584;
   border: 3px solid #5995DA;
   
-
 }
 
   nav ul {
@@ -128,9 +122,7 @@ p{
     margin: 0;
     display: flex;
     justify-content:right;
-    position: relative;
-    
-  }
+    position: relative;  }
   
   nav ul li a {
     text-decoration: none;
@@ -161,19 +153,62 @@ nav ul li a:hover {
   transform: translateY(0);
 }
 
-.about_main{
-  width: 75%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-radius: 20px;;
+.about-section{
+  display: flex;
   gap: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#about{
+
   padding: 20px;
-  margin-top: 100px;
   background-color: rgba(8, 63, 91, 0.311);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 15, 91, 0.203);
-  margin-left: 12%;
+  border-radius: 20px;
+  margin: 20px 0;
+  margin-top: 80px;
+  align-items: center;
+  margin-left: 250px;
+  margin-right: 250px;
+} 
+
+
+.about-main1{
+
+  text-align: justify;
+  line-height: 1.6;
+  
+}
+.about-main{
+  margin-top: 300px;
+ text-align: center; 
+
+}
+
+.hard-skills{
+  text-align: center;
+
+}
+.skills-list {
+  text-align: center;
+  display: flex;
+  margin-left: 385px;
+}
+
+.skill-icon{
+  margin: 10px;
+}
+
+.soft-skills{
+  text-align: center;
+}
+
+.soft-skills-list{
+
+  list-style-type: none;
+  margin-left: -30px;
+  word-spacing: 10px;
+  margin-bottom: 70px;
 }
 
 section{
@@ -186,6 +221,10 @@ section{
   
 }
 
+#portfolio{
+  margin-top: 300px;
+}
+
 .portfolio-container {
   width: 75%;
   display: grid;
@@ -193,7 +232,7 @@ section{
   border-radius: 20px;;
   gap: 20px;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 80px;
   background-color: rgba(8, 63, 91, 0.311);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
