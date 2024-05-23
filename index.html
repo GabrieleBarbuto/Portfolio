@@ -6,29 +6,30 @@
     <title>Website GABRIELE BARBUTO</title>
     <link rel="stylesheet" href="assets/style/stile.css"/>
     <link rel="icon" type="image/x-icon" href="links-and-images/images.html/favicon.ico"/>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Garamond' rel='stylesheet'>
+    
   </head>
 
-
+  
 <header>
-  <br/>
+  
   <nav>
   <ul class ="navbar"> 
     <li><a href="index.html">Home</a></li>
-    <li><a href="#about" >About</a></li>
+    <li><a href="#about-main" >About</a></li>
     <li><a href="#portfolio">Portfolio</a></li>    
     <li><a href="#contattami">Contattami</a></li> 
   </ul></nav>
 </header>
 
-<div class="header-line"></div>
+
 
 <body>
   <br/>
-    
+    <a href="#" id = "back-to-top" title="Back to top"><img width="50" height="50" src="https://img.icons8.com/ios/50/circled-chevron-up.png" alt="circled-chevron-up"/></a>
   <br/>
   <div class="contenitore-p">
   <div class = "content"
@@ -39,7 +40,7 @@
   
 
   <div class="presentazione">
-    <h1> Benvenuto! </h1>
+    <h1>  BENVENUTO! </h1>
 
   <h2> Data analyst</h2>
   <p> Mi chiamo Gabriele e ho 23 anni.<br/>
@@ -56,10 +57,10 @@
       </div>
      
 <br/>
-<div class="about-main fade-in-section">
-  <h2>About Me</h2><br/>
-  <h3>ORDINATO \ FLESSIBILE \ COLLABORATIVO </h3>
-<section id="about" class="about-section fade-in-section">
+<section id ="about-main" class="about-section fade-in-section">
+  <h4><strong>ABOUT ME</strong></h4><br/>
+  <h3>ORDINATO  \  FLESSIBILE  \  COLLABORATIVO </h3>
+<div class="about fade-in-section" >
   
   <div class="about-main1 fade-in-section">
         <p>Sono una persona molto <strong><em>ordinata</em></strong> e penso che in questo lavoro sia una dote molto importante, soprattutto nella fase di pulizia dei dati</p>
@@ -70,16 +71,16 @@
       <ul>
         <div class="skills-list">
           <div class="skill-icon">
-            <img src ="links-and-images/images.html/icons8-excel (1).svg">
+            <img src ="links-and-images/images.html/LogoExcel.png">
           </div>
           <div class="skill-icon">
-            <img src ="links-and-images/images.html/sql-database-generic.svg">
+            <img src ="links-and-images/images.html/LogoSql.png">
           </div>
           <div class="skill-icon">
-            <img src ="links-and-images/images.html/python-icon.svg">
+            <img src ="links-and-images/images.html/LogoPython.png">
           </div>
           <div class="skill-icon">
-            <img src ="links-and-images/images.html/tableau-icon-svgrepo-com.svg">
+            <img src ="links-and-images/images.html/LogoTableau.png">
           </div>
          </div>
         </div>
@@ -106,10 +107,10 @@
 
 
 <section id = "portfolio" class="fade-in-section">
-      <h2>Portfolio</h2>
-    <h3>Barbuto Gabriele</h3>
+      <h4><strong>PORTFOLIO</strong></h4>
+    <br><br><br><br><h3>Barbuto Gabriele</h3>
   <p>Tutti questi progetti sono stati creati durante il percorso di studi in Start2impact e sono stati corretti da professionisti nel settore!</p>
-<div class = "portfolio-container">
+<div class = "portfolio-container fade-in-section">
   <div class = "portfolio-item">
     <img src="links-and-images/images.html/Immagine progetto 1.png">
       <p>Data driven company</p>
@@ -123,7 +124,7 @@
         <p>Excel Avanzato</p>
       </div>
       <div class = "portfolio-item">
-        <img src="links-and-images/images.html/22112357_6554783.jpg">
+        <img src="links-and-images/images.html/ProgettoSQL.png">
           <p>Sql</p>
         </div>
         <div class = "portfolio-item">
@@ -138,6 +139,14 @@
               <img src="links-and-images/images.html/Logo progetto finale.png">
                 <p>Progetto Finale</p>
               </div>
+              <div class = "portfolio-item">
+                <img src="links-and-images/images.html/WordInProgress.png">
+                  <p>Work In Progress</p>
+                </div>
+                <div class = "portfolio-item">
+                  <img src="links-and-images/images.html/WordInProgress.png">
+                    <p>Work In Progress</p>
+                  </div>
   </div>
 </section>
 <br/><br/><br/><br/><br/>
@@ -192,6 +201,31 @@ document.addEventListener("DOMContentLoaded", function() {
       observer.observe(section);
   });
 });
+</script>
+
+
+<script>document.addEventListener('DOMContentLoaded', function () {
+  const backToTopButton = document.getElementById('back-to-top');
+
+  // Mostra la freccia quando l'utente scorre verso il basso
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 300) {
+      backToTopButton.style.display = 'block';
+    } else {
+      backToTopButton.style.display = 'none';
+    }
+  });
+
+  // Torna in cima alla pagina quando si clicca sulla freccia
+  backToTopButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
 </script>
 </body>
 </html>
