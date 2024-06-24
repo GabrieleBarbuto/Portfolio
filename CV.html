@@ -6,31 +6,43 @@
     <title>Curriculum</title>
     <link rel="stylesheet" href="assets/style/stile.css"/>
     <link rel="icon" type="image/x-icon" href="links-and-images/images.html/favicon.ico"/>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Garamond' rel='stylesheet'>
     
   </head>
-<header>
-  
-  <nav>
-  <ul class ="navbar"> 
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index.html#about-main">About</a></li>
-    <li><a href="index.html#portfolio">Portfolio</a></li>    
-    <li><a href="index.html#contattami">Contattami</a></li> 
-  </ul></nav>
-</header><br><br>
+
+  <header>
+    <nav>
+      <button class="menu-toggle" id="menuToggle">
+        &#9776; <!-- Simbolo per l'hamburger menu -->
+      </button>
+      <ul class="navbar"> 
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="links-and-images/images.html/Logo Home.png" alt="Logo">
+          </a>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about-main">About</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>    
+        <li><a href="index.html#contattami">Contattami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<br><br>
 
 <body>
-    <h1>CURRICULUM</h1>
+  <a href="#" id = "back-to-top" title="Back to top"><img width="50" height="50" src="https://img.icons8.com/ios/50/circled-chevron-up.png" alt="circled-chevron-up"/></a>
+    <h1 class="titolipag2">CURRICULUM</h1>
 
-    <h2>Barbuto Gabriele</h2> <br/><br/>
+    <h2 class="titolipag2">Barbuto Gabriele</h2> <br/><br/>
 
-    <h3>Questo è il mio percorso :</h3>
+    <h3 class="titolipag2">Questo è il mio percorso di studi :</h3>
 
-    <div class="carousel">
+    <!--<div class="carousel">
         <div class="slide">
           <div class="text">Studio informatica al Viganò di Merate</div>
         </div>
@@ -50,16 +62,102 @@
       </div>
       <button class="prev" onclick="prevSlide()">◀</button>
 
-      <button class="next" onclick="nextSlide()">▶</button>
-        <br/><br/><br/>
+      <button class="next" onclick="nextSlide()">▶</button>-->
+
+      <div class="lavori ">
+        <div class = "lavoro-item">
+          <h5> Ho studiato e mi sono <strong>diplomato</strong> in <strong>informatica</strong> presso l'istituto Viganò di Merate</h5>
+        </div>
+        <div class = "lavoro-item">
+          <h5> Ho conseguito un <strong>Master</strong> in <strong>Data Analysis</strong> presso <strong>Start2impact university</strong>.</h5>
+        </div>
+      </div>
+        
+      <br><br><br>
+
+      <h3>Questo è il mio percorso lavorativo :</h3>
+        <div class="lavori ">
+          <div class = "lavoro-item">
+            <h5>La mia prima esperienza lavorativa è stata come stagista presso l'azienda informatica <strong>InXpire Srl</strong> a Monza</h5>
+          </div>
+          <div class = "lavoro-item">
+            <h5>Sono stato dipendente per <strong>Multivendor service</strong> come assistente tecnico a Vimercate</h5>
+          </div>
+        </div><div>
+
+      <br/><br/><br/><br/><br/>
 
       <a class="button-link2" href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:81f09ef4-0c1b-4d86-99f2-87714416787d" target="_blank">Scarica CV</a>
       <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      <div class="header-line"></div><br/><br/><br/>
-      <footer>bella per il footer</footer>
+      <div class="header-line2"></div><br/><br/><br/>
+      
+      <footer>
+        <p>© Gabriele Barbuto</p>
+          <div class="footer">
+            <a href="https://github.com/GabrieleBarbuto" target="_blank" title="GitHub">
+              <img width="40" height="40" src="links-and-images/images.html/icons8-github.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/gabriele-barbuto-2a741828b/" target="_blank" title="LinkedIn">
+              <img width="40" height="40" src="links-and-images/images.html/icons8-linkedin-48.png" alt="LinkedIn">
+            </a>  
+            <a href="https://talent.start2impact.it/profile/gabriele-barbuto-5389f120-91af-47a3-8638-bf1fadb37a82" target="_blank" title="Start2impact">
+              <img class="start2" width="34" height="34" src="links-and-images/images.html/IconaStart2Impactwebp.png" alt="Start2impact">
+            </a>  
+          </div>
+      </footer>
       
       <script
         src ="assets/js/index.js">
       </script>
-    </body>
+
+
+<script>
+  document.getElementById('menuToggle').addEventListener('click', function() {
+  var navbar = document.querySelector('.navbar');
+  if (navbar.classList.contains('open')) {
+    navbar.classList.remove('open');
+    document.body.style.overflow = ''; // Ripristina lo scrolling del body
+    this.innerHTML = '&#9776;'; // Ritorna al simbolo dell'hamburger menu
+  } else {
+    navbar.classList.add('open');
+    document.body.style.overflow = 'hidden'; // Nasconde lo scrolling del body
+    this.innerHTML = '&times;'; // Cambia al simbolo della X per chiudere
+  }
+});
+
+// Aggiungi listener per i link del menu
+var menuLinks = document.querySelectorAll('.navbar li a');
+menuLinks.forEach(function(link) {
+  link.addEventListener('click', function() {
+    var navbar = document.querySelector('.navbar');
+    navbar.classList.remove('open');
+    document.body.style.overflow = ''; // Ripristina lo scrolling del body
+    document.getElementById('menuToggle').innerHTML = '&#9776;'; // Ritorna al simbolo dell'hamburger menu
+  });
+});
+</script>
+
+  <script>document.addEventListener('DOMContentLoaded', function () {
+        const backToTopButton = document.getElementById('back-to-top');
+
+        // Mostra la freccia quando l'utente scorre verso il basso
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 300) {
+            backToTopButton.style.display = 'block';
+          } else {
+            backToTopButton.style.display = 'none';
+          }
+        });
+
+        // Torna in cima alla pagina quando si clicca sulla freccia
+        backToTopButton.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      });
+  </script>
+  </body>
 </html>

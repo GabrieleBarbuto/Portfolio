@@ -4,25 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website GABRIELE BARBUTO</title>
+
     <link rel="stylesheet" href="assets/style/stile.css"/>
+    <script src="assets/js/index.js"></script>
+
     <link rel="icon" type="image/x-icon" href="links-and-images/images.html/favicon.ico"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+      
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      (function(){
+        emailjs.init('c2_f5aXh5WCGyABYU');
+      })();
     
+    </script>
   </head>
 
   
 <header>
-  
   <nav>
-  <ul class ="navbar"> 
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#about-main" >About</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>    
-    <li><a href="#contattami">Contattami</a></li> 
-  </ul></nav>
+    <button class="menu-toggle" id="menuToggle">
+      &#9776; <!-- Simbolo per l'hamburger menu -->
+    </button>
+    <ul class="navbar"> 
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="links-and-images/images.html/Logo Home.png" alt="Logo">
+        </a>
+      </div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about-main">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>    
+      <li><a href="#contattami">Contattami</a></li>
+    </ul>
+  </nav>
 </header>
 
 
@@ -31,42 +52,43 @@
   <br/>
     <a href="#" id = "back-to-top" title="Back to top"><img width="50" height="50" src="https://img.icons8.com/ios/50/circled-chevron-up.png" alt="circled-chevron-up"/></a>
   <br/>
-  <div class="contenitore-p">
-  <div class = "content"
-  style="text-align: left">
-  <img src="links-and-images/images.html/Ph Curriculum .jpg"  alt="Gabriele Barbuto" class="profile-image">
+
+    <div class="contenitore-p">
+    <div class = "content" style="text-align: left">
+      <img src="links-and-images/images.html/Ph Curriculum .jpg"  alt="Gabriele Barbuto" class="profile-image">
+    </div>
   </div>
-    <br/>
-  
+  <br/>
+    <div class="contenitore-q">
+    <div class="presentazione">
+      <h1>  BENVENUTO! </h1>
+    <h2> Data analyst</h2>
+    <p> Ciao, sono <strong>Gabriele</strong>, ho 23 anni <br>e la mia passione per la tecnologia è nata da quando ero piccolo.<br/>
+        Ho studiato informatica e dopo una breve esperienza lavorativa<br/>
+        ho deciso di cominciare il mio percorso da <strong>Data Analyst</strong> <br/>
+        con <strong>Start2impact university</strong>!
+      </p>
+    </div>
+  </div>    
 
-  <div class="presentazione">
-    <h1>  BENVENUTO! </h1>
-
-  <h2> Data analyst</h2>
-  <p> Mi chiamo Gabriele e ho 23 anni.<br/>
-      Fin da piccolo sono un appassionato di tecnologia. <br/> 
-      Ho studiato informatica e dopo una piccola parentesi lavorativa<br/>
-      ho deciso di cominciare il mio percorso da data analyst <br/>
-      con Start2impact university!
-  </p></div>
-</div> 
     <br/><br/><br/><br/><br/>
-      <div class="buttons-container">
-        <a class="button-link0" href="CV.html">Curriculum</a>
-        <a class="button-link1" href="#contattami">Contattami</a>
-      </div>
-     
-<br/>
-<section id ="about-main" class="about-section fade-in-section">
-  <h4><strong>ABOUT ME</strong></h4><br/>
-  <h3>ORDINATO  \  FLESSIBILE  \  COLLABORATIVO </h3>
-<div class="about fade-in-section" >
-  
-  <div class="about-main1 fade-in-section">
-        <p>Sono una persona molto <strong><em>ordinata</em></strong> e penso che in questo lavoro sia una dote molto importante, soprattutto nella fase di pulizia dei dati</p>
-    <p>Mi ritengo una persona <strong><em>flessibile</em></strong> e penso che sia fondamentale in particolare per chi lavora nel mondo digitale. Al giorno d'oggi ci stiamo abituando a continui cambiamenti e chi non è in grado di rimanere al passo coi tempi rischia di rimanere indietro.</p>
-    <p>Sono <strong><em>collaborativo</em></strong>, supporto i colleghi e condivido conoscenze per creare un clima positivo a lavoro.  </p>
-  <div class="hard-skills fade-in-section"><br/><br/>
+    
+    <div class="buttons-container">
+      <a class="button-link0" href="CV.html">Curriculum</a>
+      <a class="button-link1" href="#contattami">Contattami</a>
+    </div>
+  <br/>
+
+  <section id ="about-main" class="about-section fade-in-section">
+    <h4><strong>ABOUT ME</strong></h4><br/>
+    <h3 class ="aboutme">ORDINATO | COLLABORATIVO | FLESSIBILE </h3>
+  <div class="about fade-in-section" >
+   <div class="about-main1 fade-in-section">
+      <p>Sono una persona molto <strong><em>ordinata</em></strong>, una qualità che considero essenziale nel mio lavoro, specialmente nella fase di pulizia dei dati. Mantenere ordine e precisione mi permette di gestire i progetti con efficienza e accuratezza.</p>
+      <p>Sono <strong><em>collaborativo</em></strong>, supporto i miei colleghi e condivido le mie conoscenze per creare un ambiente di lavoro positivo e produttivo. Credo fermamente che il lavoro di squadra e la condivisione delle competenze siano fondamentali per il successo collettivo.  </p>
+      <p>Mi ritengo una persona <strong><em>flessibile</em></strong>  una caratteristica cruciale per chi opera nel settore digitale. In un mondo in costante evoluzione, è vitale adattarsi rapidamente ai cambiamenti per rimanere competitivi e al passo coi tempi. La capacità di apprendere e adattarsi continuamente è ciò che permette di avanzare e non rimanere indietro.</p>
+   <div class="skill-container fade-in-section">
+      <div class="hard-skills fade-in-section"><br/><br/>
     <h3>HARD SKILLS</h3>
       <ul>
         <div class="skills-list">
@@ -83,87 +105,157 @@
             <img src ="links-and-images/images.html/LogoTableau.png">
           </div>
          </div>
-        </div>
-        <div class="soft-skills fade-in-section"><br/><br/>
+        </ul>
+   </div>
+      <div class="soft-skills fade-in-section"><br/><br/>
           <h3>SOFT SKILLS</h3>
-             <div class = "soft-skills-list">
-              Problem-solving |
-              Collaborazione | 
-              teamwork<br/>
-              Precisione |
-              Flessibile |
-              Dettaglioso<br/>
-             </div>
-        </div>
-      </ul>
-    </div>
-  </div>
+          <ul>
+            <div class = "soft-skills-list">
+            Flessibile |
+            Collaborativo |
+            Teamwork
+            <br/>
+            Precisione |
+            Problem-solving |
+            Meticoloso 
+            </div>
+            </ul>
+          </div>
+          </div>  
+          </div>
+        </div>    
+  </section>
 
-
-
-  </div>
-</section>
 <br/><br/><br/>
 
+  <section id = "portfolio" class="fade-in-section">
+    <h4><strong>PORTFOLIO</strong></h4>
+    
+    <br><br><br><br>
+    
+    <h3>Barbuto Gabriele</h3>
+  <p>Tutti questi progetti li ho realizzati durante il percorso di studi in Start2impact e sono stati corretti da professionisti nel settore!</p>
 
-<section id = "portfolio" class="fade-in-section">
-      <h4><strong>PORTFOLIO</strong></h4>
-    <br><br><br><br><h3>Barbuto Gabriele</h3>
-  <p>Tutti questi progetti sono stati creati durante il percorso di studi in Start2impact e sono stati corretti da professionisti nel settore!</p>
-<div class = "portfolio-container fade-in-section">
-  <div class = "portfolio-item">
-    <img src="links-and-images/images.html/Immagine progetto 1.png">
+  <div class = "portfolio-container fade-in-section">
+
+    <div class = "portfolio-item">
+      <a href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=be5b96781d&attid=0.1&permmsgid=msg-f:1800303343063527640&th=18fbf65a233ff0d8&view=att&disp=inline&saddbat=ANGjdJ-DK1W9jGl0dwkucFHIg_FsT5uhHcbsB8vagKaftjgTk7cTJSLIKsTQgpgRhpbj2JXeAwEf0ecbeMDkeK7DHzxtRnt2HZ6ERRXSW4w1Lp5duRWpEZFgEHYdR9Id0JeDeOZe7-Kms_S9ksToweW5TMQa8sQ6vnLe9FudP4ng8VOjI4t5hlmTSXeUoAF-tkXDpZ3fIJZbbMqaG3NE-h6kgefKLBG2FJ48PjTdnfhNdr93YlIUuYZ-d4gNdJ5KM8enZGT0Lkn3OgwXGHXXuIzbTpu-ViwGzw4MPzBn9DPMss1CzG2-9QnfxF9AfXyX-l1T6FrixhJcb7U9uXedUoxusTQrl7IIon00EFnddCfywa_OqebG0GEEEZ37wJ_WCbJntR8s6bqShWXBlisuVzUJ70rQaMVGtS3jVq-jQO9blLGXTEIoBEsXx5QhPI3yj-HW9Kgdv0UoA3LWLWH0hIiRA53d3ZmlUzeZwfzPSiqO5XoojQMY7Mld-Vp2K9MBJqvqB1TGnjS6vAlY3U3tdwiI9k1I16M9mIdMKtn1wYD6OtAao28Ea7klIZgcTubnRcUzDpLMXIyr3fmyTAihTTvMQvBNuSIzr_1v0B5BQOS8FDsCsGcGNCtbwkPxucDF_0DHn6ThU5aL9-P8bPvkn72fjvUmkSBSN4MEJkScX6u5MjunJai1qmJiSx8tpOzn8HcsJ-NdI1ATbql4rJR9r7UXJM5xfszI6Sv9RiF5eL4_-Yv7QdwpovFt2K6b4L3hLyHB0trMqxyLtyh8LP0xl0wMSJQajWkfmEiKllqDM8OcYpEITh9yJbT_whyuY69VPLFIycI1ItZgpVzReE38bVrLenmgZ7HJS1Qrsr57IoyaBebpvZVckXTGUW7Fw0klVnF-30OzXsQviy7vHlwbRqMbY7Dd551DSSGyt105WDqTNzhCYUBkXBHW_l6ZNz7fRT5_oN-SAITcDpcT3HHsrX6IIN0GmMPWzhrryxoKfb2cZ_S_5WLu1Ksmy7LIw9CHnBJyIOgD42VH58n0pk376ibi97dAKwZTOPITS_JMUcVSpnAxVJIXFNJVg-B5af_Z8X_P4btzIY6hdk_oAZI7" 
+      target="_blank">
+        <img src="links-and-images/images.html/Immagine progetto 1.png"></a>
       <p>Data driven company</p>
   </div>
+
   <div class = "portfolio-item">
-    <img src="links-and-images/images.html/Excel Base.jpeg">
-      <p class="">Excel Base</p>
-    </div>
-    <div class = "portfolio-item">
-      <img src="links-and-images/images.html/ExcelAvanzato.webp">
-        <p>Excel Avanzato</p>
-      </div>
-      <div class = "portfolio-item">
-        <img src="links-and-images/images.html/ProgettoSQL.png">
-          <p>Sql</p>
-        </div>
-        <div class = "portfolio-item">
-          <img src="links-and-images/images.html/Python.png">
-            <p>Python</p>
-          </div>
-          <div class = "portfolio-item">
-            <img src="links-and-images/images.html/Tableau.png">
-              <p>Tableau</p>
-            </div>
-            <div class = "portfolio-item">
-              <img src="links-and-images/images.html/Logo progetto finale.png">
-                <p>Progetto Finale</p>
-              </div>
-              <div class = "portfolio-item">
-                <img src="links-and-images/images.html/WordInProgress.png">
-                  <p>Work In Progress</p>
-                </div>
-                <div class = "portfolio-item">
-                  <img src="links-and-images/images.html/WordInProgress.png">
-                    <p>Work In Progress</p>
-                  </div>
+    <a href="https://docs.google.com/spreadsheets/d/1zr6yCOrtGecRcl9XhFhcrTO_2V2uHFr0/edit?usp=drive_link&ouid=109434116130827350593&rtpof=true&sd=true" 
+    target="_blank">
+      <img src="links-and-images/images.html/Excel Base.jpeg"></a>
+    <p>Excel Base</p>
+  </div>
+
+  <div class = "portfolio-item">
+    <a href="https://docs.google.com/spreadsheets/d/1Xc2GTA4XHSqTUr6vLmjq8_WvMhypS327/edit?usp=drive_link&ouid=109434116130827350593&rtpof=true&sd=true"
+    target="_blank">
+      <img src="links-and-images/images.html/ExcelAvanzato.webp"></a>
+    <p>Excel Avanzato</p>
+  </div>
+
+  <div class = "portfolio-item">
+    <a href="https://drive.google.com/drive/folders/1PaCtZ2QUqfxNF4-65lt1Sw6BQl9MeM-6?usp=drive_link"
+    target="_blank">
+      <img src="links-and-images/images.html/ProgettoSQL.png"></a>
+    <p>Sql</p>
+  </div>
+  
+  <div class = "portfolio-item">
+    <a href="https://drive.google.com/file/d/1eCd1FtWeMxaw5P5JTpwzPBIYJcKj-R45/view?usp=sharing"
+    target="_blank">
+      <img src="links-and-images/images.html/Python.png"></a>
+    <p>Python</p>
+  </div>
+  
+  <div class = "portfolio-item">
+    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:b9b7df15-e3cb-4c4d-a540-73a31a63bbea"
+    target="_blank">
+      <img src="links-and-images/images.html/Tableau.png"></a>
+    <p>Tableau</p>
+  </div>
+
+  <div class = "portfolio-item">
+    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:4c6ad217-b9fc-4a78-9944-052e0f416de6"
+    target="_blank">
+      <img src="links-and-images/images.html/Logo progetto finale.png"></a>
+    <p>Progetto Finale</p>
+  </div>
+  
+  <div class = "portfolio-item">
+    <img src="links-and-images/images.html/WordInProgress.png">
+    <p>Work In Progress</p>
+  </div>
+  
+  <div class = "portfolio-item2">
+    <img src="links-and-images/images.html/WordInProgress.png">
+    <p>Work In Progress</p>
+  </div>
   </div>
 </section>
-<br/><br/><br/><br/><br/>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
-
-
-
-
-<section id = "contattami">
-  <p>Form di contatto</p>
-</section>
+  <section id = "contattami" class="fade-in-section">
+    <h2>Contattami!</h2>
+    <div class="contact fade-in-section">
+      <input type="text" id = "fullName" placeholder="Full Name" required /><br/>
+      <input type="email" id = "email_id" placeholder="Email" required /><br/>
+      <textarea id = "message" placeholder="Message" required></textarea><br/>
+      <button onclick="SendMail()">Invia </button>
+    </div>
+  </section>
 
 <div class="header-line"></div><br/><br/><br/>
 
 
-<footer>bella per il footer</footer>
+<footer>
+  <p>© Gabriele Barbuto</p>
+    <div class="footer">
+      <a href="https://github.com/GabrieleBarbuto" target="_blank" title="GitHub">
+        <img width="40" height="40" src="links-and-images/images.html/icons8-github.svg" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/gabriele-barbuto-2a741828b/" target="_blank" title="LinkedIn">
+        <img width="40" height="40" src="links-and-images/images.html/icons8-linkedin-48.png" alt="LinkedIn">
+      </a>  
+      <a href="https://talent.start2impact.it/profile/gabriele-barbuto-5389f120-91af-47a3-8638-bf1fadb37a82" target="_blank" title="Start2impact">
+        <img class="start2" width="34" height="34" src="links-and-images/images.html/IconaStart2Impactwebp.png" alt="Start2impact">
+      </a>  
+    </div>
+</footer>
+
+<script>
+  document.getElementById('menuToggle').addEventListener('click', function() {
+  var navbar = document.querySelector('.navbar');
+  if (navbar.classList.contains('open')) {
+    navbar.classList.remove('open');
+    document.body.style.overflow = ''; // Ripristina lo scrolling del body
+    this.innerHTML = '&#9776;'; // Ritorna al simbolo dell'hamburger menu
+  } else {
+    navbar.classList.add('open');
+    document.body.style.overflow = 'hidden'; // Nasconde lo scrolling del body
+    this.innerHTML = '&times;'; // Cambia al simbolo della X per chiudere
+  }
+});
+
+// Aggiungi listener per i link del menu
+var menuLinks = document.querySelectorAll('.navbar li a');
+menuLinks.forEach(function(link) {
+  link.addEventListener('click', function() {
+    var navbar = document.querySelector('.navbar');
+    navbar.classList.remove('open');
+    document.body.style.overflow = ''; // Ripristina lo scrolling del body
+    document.getElementById('menuToggle').innerHTML = '&#9776;'; // Ritorna al simbolo dell'hamburger menu
+  });
+});
+</script>
+
 <script>
   document.addEventListener("DOMContentLoaded", function() {
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -226,6 +318,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-</script>
+
 </body>
 </html>
