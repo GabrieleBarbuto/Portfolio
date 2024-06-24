@@ -30,7 +30,7 @@
 <header>
   <nav>
     <button class="menu-toggle" id="menuToggle">
-      &#9776; <!-- Simbolo per l'hamburger menu -->
+      &#9776;
     </button>
     <ul class="navbar"> 
       <div class="logo-container">
@@ -235,23 +235,23 @@
   var navbar = document.querySelector('.navbar');
   if (navbar.classList.contains('open')) {
     navbar.classList.remove('open');
-    document.body.style.overflow = ''; // Ripristina lo scrolling del body
-    this.innerHTML = '&#9776;'; // Ritorna al simbolo dell'hamburger menu
+    document.body.style.overflow = '';
+    this.innerHTML = '&#9776;';
   } else {
     navbar.classList.add('open');
-    document.body.style.overflow = 'hidden'; // Nasconde lo scrolling del body
-    this.innerHTML = '&times;'; // Cambia al simbolo della X per chiudere
+    document.body.style.overflow = 'hidden';
+    this.innerHTML = '&times;';
   }
 });
 
-// Aggiungi listener per i link del menu
+
 var menuLinks = document.querySelectorAll('.navbar li a');
 menuLinks.forEach(function(link) {
   link.addEventListener('click', function() {
     var navbar = document.querySelector('.navbar');
     navbar.classList.remove('open');
-    document.body.style.overflow = ''; // Ripristina lo scrolling del body
-    document.getElementById('menuToggle').innerHTML = '&#9776;'; // Ritorna al simbolo dell'hamburger menu
+    document.body.style.overflow = '';
+    document.getElementById('menuToggle').innerHTML = '&#9776;';
   });
 });
 </script>
@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <script>document.addEventListener('DOMContentLoaded', function () {
   const backToTopButton = document.getElementById('back-to-top');
 
-  // Mostra la freccia quando l'utente scorre verso il basso
+  
   window.addEventListener('scroll', function () {
     if (window.scrollY > 300) {
       backToTopButton.style.display = 'block';
@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Torna in cima alla pagina quando si clicca sulla freccia
+  
   backToTopButton.addEventListener('click', function (e) {
     e.preventDefault();
     window.scrollTo({

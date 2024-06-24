@@ -16,7 +16,7 @@
   <header>
     <nav>
       <button class="menu-toggle" id="menuToggle">
-        &#9776; <!-- Simbolo per l'hamburger menu -->
+        &#9776; 
       </button>
       <ul class="navbar"> 
         <div class="logo-container">
@@ -42,29 +42,7 @@
 
     <h3 class="titolipag2">Questo è il mio percorso di studi :</h3>
 
-    <!--<div class="carousel">
-        <div class="slide">
-          <div class="text">Studio informatica al Viganò di Merate</div>
-        </div>
-        <div class="slide">
-          <div class="text">Stage a Monza nell'azienda InXpire srls</div>
-        </div>
-        <div class="slide">
-            <div class="text">Dipende come assistente tecnico per Multivendor service a Vimercate</div>
-          </div>
-          <div class="slide">
-            <div class="text">Studente di Start2impact, master in Data analyst</div>
-          </div>
-        
-
-        
-        
-      </div>
-      <button class="prev" onclick="prevSlide()">◀</button>
-
-      <button class="next" onclick="nextSlide()">▶</button>-->
-
-      <div class="lavori ">
+        <div class="lavori ">
         <div class = "lavoro-item">
           <h5> Ho studiato e mi sono <strong>diplomato</strong> in <strong>informatica</strong> presso l'istituto Viganò di Merate</h5>
         </div>
@@ -116,23 +94,23 @@
   var navbar = document.querySelector('.navbar');
   if (navbar.classList.contains('open')) {
     navbar.classList.remove('open');
-    document.body.style.overflow = ''; // Ripristina lo scrolling del body
-    this.innerHTML = '&#9776;'; // Ritorna al simbolo dell'hamburger menu
+    document.body.style.overflow = '';
+    this.innerHTML = '&#9776;';
   } else {
     navbar.classList.add('open');
-    document.body.style.overflow = 'hidden'; // Nasconde lo scrolling del body
-    this.innerHTML = '&times;'; // Cambia al simbolo della X per chiudere
+    document.body.style.overflow = 'hidden';
+    this.innerHTML = '&times;';
   }
 });
 
-// Aggiungi listener per i link del menu
+
 var menuLinks = document.querySelectorAll('.navbar li a');
 menuLinks.forEach(function(link) {
   link.addEventListener('click', function() {
     var navbar = document.querySelector('.navbar');
     navbar.classList.remove('open');
-    document.body.style.overflow = ''; // Ripristina lo scrolling del body
-    document.getElementById('menuToggle').innerHTML = '&#9776;'; // Ritorna al simbolo dell'hamburger menu
+    document.body.style.overflow = '';
+    document.getElementById('menuToggle').innerHTML = '&#9776;';
   });
 });
 </script>
@@ -140,7 +118,7 @@ menuLinks.forEach(function(link) {
   <script>document.addEventListener('DOMContentLoaded', function () {
         const backToTopButton = document.getElementById('back-to-top');
 
-        // Mostra la freccia quando l'utente scorre verso il basso
+       
         window.addEventListener('scroll', function () {
           if (window.scrollY > 300) {
             backToTopButton.style.display = 'block';
@@ -149,7 +127,7 @@ menuLinks.forEach(function(link) {
           }
         });
 
-        // Torna in cima alla pagina quando si clicca sulla freccia
+        
         backToTopButton.addEventListener('click', function (e) {
           e.preventDefault();
           window.scrollTo({
