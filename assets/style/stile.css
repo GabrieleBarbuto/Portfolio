@@ -109,7 +109,7 @@ body{
   }
   .profile-image {
       max-width: 400px;
-      margin-left: 400px;
+      margin-left: 335px;
       margin-bottom: -200px;
   }
   }
@@ -532,7 +532,7 @@ nav ul li a:hover {
 
 .hard-skills{
   text-align: center;
-  margin-left: 200px;
+  margin-left: 785px;
 }
 .skills-list {
   text-align: center;
@@ -568,6 +568,15 @@ section{
   
 }
 
+@media only screen and (min-width: 2560px){
+  .about-main1{font-size: larger;}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1920px){
+  .hard-skills {
+  margin-left: 286px;
+}
+}
 @media screen and (max-width: 480px) {
   .about-main1 {
     margin-left: 20px;
