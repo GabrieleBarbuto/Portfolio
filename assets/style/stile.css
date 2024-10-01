@@ -101,6 +101,18 @@ body{
   margin-right: 210px;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+  
+  .presentazione{
+    margin-left: -150px;
+    margin-top: 150px;
+  }
+  .profile-image {
+      max-width: 400px;
+      margin-left: 400px;
+      margin-bottom: -200px;
+  }
+  }
 
 @media only screen and (min-width: 2560px) {
   
@@ -275,6 +287,29 @@ h5{
   
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1920px){
+  .buttons-container {
+      margin-left: 880px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-top: 0;
+  }
+
+  .button-link0, .button-link1, .button-link2 {
+      width: auto;
+      margin: 20px;
+      font-size: 24px;
+  }
+
+  .button-link0 {
+      margin-left: 20px;
+  }
+
+  .button-link1, .button-link2 {
+      margin-left: 0;
+  }
+}
 
 @media only screen and (min-width: 2560px){
   .buttons-container {
@@ -370,6 +405,12 @@ nav ul li a:hover {
   border: none;
   color: var(--primary-color);
   cursor: pointer;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1920px){
+  .logo-container {
+    margin-right: 1070px;
+    
+  }
 }
 
 @media only screen and (min-width: 2560px){
@@ -691,7 +732,13 @@ section{
     }
     
   }
-
+  @media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .lavori {
+          
+      margin-left: 266px;
+    }
+  
+  }
   @media only screen and (min-width: 2560px) {
     .lavori {
           
