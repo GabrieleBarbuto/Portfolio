@@ -230,6 +230,7 @@ h5{
 
 .buttons-container{
   margin-left: 80px;
+  margin-bottom: -100px;
 }
 .button-link0, .button-link1{
     
@@ -342,6 +343,7 @@ h5{
       flex-direction: column;
       align-items: center;
       margin-top: -60px;
+      margin-bottom: 8px;
   }
 
   .button-link0, .button-link1 {
@@ -408,7 +410,7 @@ nav ul li a:hover {
 }
 @media only screen and (min-width: 1024px) and (max-width: 1920px){
   .logo-container {
-    margin-right: 1070px;
+    margin-right: 1040px;
     
   }
 }
@@ -579,10 +581,8 @@ section{
 }
 @media screen and (max-width: 480px) {
   .about-main1 {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
-  }
+    max-width: 272px;
+}
 
   .about-main {
     margin-top: 50px;
@@ -591,11 +591,6 @@ section{
   .hard-skills {
     margin-left: 10px;
     margin-right: 10px;
-  }
-
-  .soft-skills {
-    margin-right: 10px;
-    margin-left: 10px;
   }
   
   .skill-container {
@@ -607,9 +602,6 @@ section{
     margin-right: 50px;
   }
 
-  .soft-skills-list {
-    margin-left: -100;
-  }
 }
  
 #portfolio{
